@@ -34,6 +34,6 @@ This is a typing game werein you will duel with the computer and type in varous 
 
    A) Your opponent can gain this spell if you misspel one spell. 
   
-   B) You can gain this spell if you spell two words correctly.
+   B) You can gain this spell if you spell two words correctly.  
 
-     a) But to access this spell (if you have it) when the "Avada Kedavra" spell is comes you need to write down the three elements which make you the master of death (Elder wand,resserection stone, clock of invisibility) in under 15 seconds.
+       a) But to access this spell (if you have it) when the "Avada Kedavra" spell is comes you need to write down the three elements which make you the master of death (Elder wand,resserection stone, clock of invisibility) in under 15 seconds.
