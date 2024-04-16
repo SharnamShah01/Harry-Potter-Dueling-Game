@@ -6,6 +6,7 @@ This is a typing game werein you will duel with the computer and type in varous 
 1) You will be given 3 hearts, once those hearts run out you loose, you can kill the opponent via the "Avada Kedavra" spell or by offensive spells.
    A) HOW YOU LOOSE HEARTS:
         You loose hearts by either of the 3 ways:  
+
            a) you type in the wrong spelling for the spell which you are using (loose 1 heart)   
 
            b) you take longer than 7 seconds to type and enter your spell (loose 1 heart). 
