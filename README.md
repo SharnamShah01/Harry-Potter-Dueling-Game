@@ -3,7 +3,7 @@
 This is a typing game werein you will duel with the computer and type in varous spells to etiher deflect or damage your opponent.  
   
 **HOW TO PLAY**  
-1) You will be given 3 hearts, once those hearts run out you loose, you can kill the opponent via the "Avada Kedavra" spell or by offensive spells.
+1) You will be given 3 hearts, once those hearts run out you loose, you can kill the opponent via the "Avada Kedavra" spell or by offensive spells.  
    A) HOW YOU LOOSE HEARTS:
         You loose hearts by either of the 3 ways:  
 
