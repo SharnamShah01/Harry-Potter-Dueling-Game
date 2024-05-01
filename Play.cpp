@@ -139,16 +139,12 @@ void play(){
         if(right_answers>=2){
             master_of_death_user =1;
         }
-        else{
-            master_of_death_user =0;
-        }
+
 
         if(wrong_answers >= 1){
             master_of_death_opponent =1;
         }
-        else{
-            master_of_death_opponent =0;
-        }
+
 
 
         play();
