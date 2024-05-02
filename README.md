@@ -15,7 +15,7 @@ This is a typing game werein you will duel with the computer and type in varous 
 
    B) HOW YOU CAN DAMAGE YOUR OPPONENT:  
 
-       Your opponent will have 5 hearts.  
+       Your opponent will have 10 hearts.  
        You can Damage your opponent in 3 ways:  
 
          a) you type and enter the correct spelling for the offensive spell (Damage 1 heart to opponent).  
