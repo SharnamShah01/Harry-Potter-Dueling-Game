@@ -30,7 +30,8 @@ void play(){
     n_space(2);
 
     if(wrong_answers == 2){
-        cout<<"AVADA KEDVARA INVOKED";
+        cout<<"AVADA KEDVARA INVOKED"<<endl;
+
 
         if(master_of_death_user){
             string input_for_user = "Elder wand resserection stone clock of invisibility";
@@ -41,6 +42,7 @@ void play(){
             if(input == input_for_user){
                 opponent_heart_left = opponent_heart_left -2;
                 master_of_death_user =0;
+                wrong_answers =0;
             }
 
         }
