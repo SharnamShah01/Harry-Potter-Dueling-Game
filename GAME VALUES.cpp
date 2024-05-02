@@ -11,7 +11,7 @@ typedef long long ll;
 
 ll ROUND = 1;
 ll user_heart_left = 5;
-ll opponent_heart_left =5;
+ll opponent_heart_left =10;
 ll wrong_answers =0;
 ll master_of_death_user =0;
 ll master_of_death_opponent = 0;
