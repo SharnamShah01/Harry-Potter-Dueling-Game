@@ -30,14 +30,20 @@ int main()
     cin>>iint;
 
     if(iint ==1){
-        ifstream file ("OWN PROJECTS/HARRY POTTER DUELLING GAME/RULES HARRY POTTER DUIELLING GAME");
-        if (file.is_open()) {
+        ifstream file("C:\\Users\\sharn\\CLionProjects\\untitled\\OWN PROJECTS\\HARRY POTTER DUELLING GAME\\Harry-Potter-Dueling-Game\\RULES HARRY POTTER DUIELLING GAME"); // Assuming it's a text file
+        if (file.is_open())
+        {
             string line;
-            while (getline(file, line)) {
+            while (getline(file, line))
+            {
                 cout << line << endl;
             }
+            file.close();
         }
-
+        else
+        {
+            cout << "Unable to open file!" << endl;
+        }
         print_blue_line();
         n_space(5);
         cout << "to play press 2" << endl;

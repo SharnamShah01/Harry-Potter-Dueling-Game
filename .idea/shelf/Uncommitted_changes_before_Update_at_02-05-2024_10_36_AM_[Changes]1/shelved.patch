@@ -1,0 +1,80 @@
+Index: RULES HARRY POTTER DUIELLING GAME
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Harry-Potter-Dueling-Game\r\n\r\nThis is a typing game werein you will duel with the computer and type in varous spells to etiher deflect or damage your opponent.\r\n\r\n**HOW TO PLAY**\r\n1) You will be given 5 hearts, once those hearts run out you loose, you can kill the opponent (having 10 hearts) via the \"Avada Kedavra\" spell or by offensive spells.\r\n   A) HOW YOU LOOSE HEARTS:\r\n        You loose hearts by either of the 3 ways:\r\n\r\n           a) you type in the wrong spelling for the spell which you are using (loose 1 heart)\r\n\r\n           b) you take longer than 7 seconds to type and enter your spell (loose 1 heart).\r\n\r\n           c) you face the \"Avada Kedavra\" spell from the opponent and you don't have the \"master of death\" ability (loose all of your hearts and you die).\r\n\r\n   B) HOW YOU CAN DAMAGE YOUR OPPONENT:\r\n\r\n       Your opponent will have 5 hearts.\r\n       You can Damage your opponent in 3 ways:\r\n\r\n         a) you type and enter the correct spelling for the offensive spell (Damage 1 heart to opponent).\r\n\r\n         b) you type in \"Avada Kedavra\" spell (Kill your opponent).\r\n\r\n         c) you defelect the \"Avada Kedavra\" spell from your opponent (Damage 2 hearts to opponent).\r\n\r\n2) Accessing the **Avada Kedavra** spell.\r\n\r\n   A)Your opponent can access the \"Avada Kedavra\" if you misspelt two spells consecutively then your opponent gains the \"Avada Kedavra\" spell.\r\n\r\n   B)You can gain the \"Avada Kedavra\" spell if you spell three consecutive words correctly.\r\n\r\n3) Accessing the \"Master of death\".\r\n\r\n   A) Your opponent can gain this spell if you misspel one spell.\r\n\r\n   B) You can gain this spell if you spell two words correctly.\r\n\r\n       a) But to access this spell (if you have it) when the \"Avada Kedavra\" spell is comes you need to write down the three elements which make you the master of death (Elder wand,resserection stone, clock of invisibility) in under 15 seconds.
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/RULES HARRY POTTER DUIELLING GAME b/RULES HARRY POTTER DUIELLING GAME
+--- a/RULES HARRY POTTER DUIELLING GAME	
++++ b/RULES HARRY POTTER DUIELLING GAME	
+@@ -15,7 +15,7 @@
+ 
+    B) HOW YOU CAN DAMAGE YOUR OPPONENT:
+ 
+-       Your opponent will have 5 hearts.
++       Your opponent will have 10 hearts.
+        You can Damage your opponent in 3 ways:
+ 
+          a) you type and enter the correct spelling for the offensive spell (Damage 1 heart to opponent).
+Index: Main.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include <iostream>\r\n#include <bits/stdc++.h>\r\n#include <windows.h>\r\n#include <fstream>\r\n#include <algorithm>\r\n#include \"Play.cpp\"\r\n#include \"GAME VALUES.h\"\r\n\r\nusing namespace std;\r\ntypedef long long ll;\r\n\r\nint main()\r\n{\r\n    ll iint;\r\n    string istr;\r\n    HANDLE console_color;\r\n    console_color = GetStdHandle(\r\n            STD_OUTPUT_HANDLE);\r\n\r\n    // Print different colors from 1\r\n    // to 50 on the output screen\r\n    ll P=1;\r\n    SetConsoleTextAttribute( console_color, P);\r\n    print_line(100);\r\n    cout<<endl<<\"WELCOME TO THE HARRY POTTER DUELLING GAME\"<<endl;\r\n\r\n    ll Q=7;\r\n    SetConsoleTextAttribute( console_color, Q);\r\n    cout<<endl<<\"To see the rules press 1 to play press 2\"<<endl;\r\n    cin>>iint;\r\n\r\n    if(iint ==1){\r\n        ifstream file (\"OWN PROJECTS/HARRY POTTER DUELLING GAME/RULES HARRY POTTER DUIELLING GAME\");\r\n        if (file.is_open()) {\r\n            string line;\r\n            while (getline(file, line)) {\r\n                cout << line << endl;\r\n            }\r\n        }\r\n\r\n        print_blue_line();\r\n        n_space(5);\r\n        cout << \"to play press 2\" << endl;\r\n        cin >> iint;\r\n        cin.ignore();\r\n        play();\r\n\r\n    }\r\n\r\n    else if(iint == 2){\r\n        cin.ignore();\r\n        play();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Main.cpp b/Main.cpp
+--- a/Main.cpp	
++++ b/Main.cpp	
+@@ -30,14 +30,20 @@
+     cin>>iint;
+ 
+     if(iint ==1){
+-        ifstream file ("OWN PROJECTS/HARRY POTTER DUELLING GAME/RULES HARRY POTTER DUIELLING GAME");
+-        if (file.is_open()) {
++        ifstream file("C:\\Users\\sharn\\CLionProjects\\untitled\\OWN PROJECTS\\HARRY POTTER DUELLING GAME\\Harry-Potter-Dueling-Game\\RULES HARRY POTTER DUIELLING GAME"); // Assuming it's a text file
++        if (file.is_open())
++        {
+             string line;
+-            while (getline(file, line)) {
++            while (getline(file, line))
++            {
+                 cout << line << endl;
+             }
++            file.close();
+         }
+-
++        else
++        {
++            cout << "Unable to open file!" << endl;
++        }
+         print_blue_line();
+         n_space(5);
+         cout << "to play press 2" << endl;
+Index: .idea/git_toolbox_prj.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/git_toolbox_prj.xml b/.idea/git_toolbox_prj.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/git_toolbox_prj.xml	
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GitToolBoxProjectSettings">
++    <option name="commitMessageIssueKeyValidationOverride">
++      <BoolValueOverride>
++        <option name="enabled" value="true" />
++      </BoolValueOverride>
++    </option>
++    <option name="commitMessageValidationEnabledOverride">
++      <BoolValueOverride>
++        <option name="enabled" value="true" />
++      </BoolValueOverride>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
