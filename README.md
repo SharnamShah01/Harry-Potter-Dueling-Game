@@ -37,3 +37,11 @@ This is a typing game werein you will duel with the computer and type in varous 
    B) You can gain this spell if you spell two words correctly.  
 
        a) But to access this spell (if you have it) when the "Avada Kedavra" spell is comes you need to write down the three elements which make you the master of death (Elder wand,resserection stone, clock of invisibility) in under 15 seconds.
+
+
+# How to Download and run the code  
+  1) Make sure you have a c++ complier like MinGW on you computer  
+  2) If you want you can have a IDE or editor also, but not required if you want to run the code, but a compiler is a must
+  3) Download the .zip file from the green code button
+  4) Once downloaded, open up command prompt, chnage the current directory to the place where the code is kept and run the main.cpp file
+  5) the code should run smoothly afterwards
